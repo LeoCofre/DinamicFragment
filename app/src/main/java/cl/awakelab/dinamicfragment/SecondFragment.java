@@ -65,12 +65,11 @@ public class SecondFragment extends Fragment {
 
         binding = FragmentSecondBinding.inflate(getLayoutInflater(), container, false);
         binding.buttonVolver.setOnClickListener(v -> {
-            FragmentManager fm = getActivity()
-                    .getSupportFragmentManager();
+            FragmentManager fm = getActivity().getSupportFragmentManager();
             fm.popBackStack();
         });
         binding.webSite.loadUrl(mParam1);
-        // Inflate the layout for this fragment
+
         return binding.getRoot();
     }
 }
